@@ -1,0 +1,988 @@
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fbebbd;
+}
+
+a {
+  text-decoration: none;
+  font-size: 32px;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 90vw;
+  margin: 0 auto;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h1 {
+  font-size: 72px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 52px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 32px;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.show {
+  opacity: 1;
+  scale: 1;
+}
+
+.header__inner {
+  position: relative;
+}
+.header__inner-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100px;
+  background-image: url(../img/header-flag-logo.png);
+  background-size: cover;
+  background-position: center;
+}
+.header__inner-title {
+  font-size: 72px;
+  text-align: center;
+}
+.header__inner-btn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 85px;
+  background-image: url(../img/header-btn-bg.svg);
+  background-size: cover;
+  background-position-y: -5px;
+  cursor: pointer;
+}
+.header__inner-menu {
+  display: flex;
+  justify-content: center;
+}
+.header__inner-menu-items {
+  background: linear-gradient(to right, #fcfbf8, #f3aa5c);
+  border: 2px solid rgb(245, 242, 242);
+  padding: 0 5px 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__inner-menu-items:active {
+  border: black;
+  background-color: rgb(245, 242, 242);
+}
+.header__inner-menu-link {
+  font-size: 42px;
+  font-weight: 900;
+  color: #f3aa5c;
+  text-decoration: none;
+}
+.header__inner-menu-link:active {
+  color: #f68003;
+}
+
+.arrive__inner {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.arrive__inner .inner__development {
+  width: 90vw;
+}
+.arrive__inner .inner__development .development__airport {
+  width: 90vw;
+  padding-top: 100px;
+  display: none;
+  flex-direction: column;
+}
+.arrive__inner .inner__development .development__airport .airport__getworkperm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.arrive__inner .inner__development .development__airport .airport__getworkperm .getworkperm__title {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.arrive__inner .inner__development .development__airport .airport__getworkperm .getworkperm__text {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.arrive__inner .inner__development .development__airport .airport__getworkperm .getworkperm__link {
+  text-align: center;
+  font-size: 42px;
+  color: #f3aa5c;
+  background: linear-gradient(to right, #fcfbf8, #f3aa5c);
+}
+.arrive__inner .inner__development .development__airport .airport__find-freehost {
+  display: flex;
+  flex-direction: column;
+}
+.arrive__inner .inner__development .development__airport .airport__find-freehost .find__freehost-link {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.arrive__inner .inner__development .development__airport .airport__find-freehost .find__freehost-links {
+  font-size: 42px;
+  font-weight: 600;
+  background: linear-gradient(to right, #fcfbf8, #f3aa5c);
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.arrive__inner .inner__legalization {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 100px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.arrive__inner .inner__legalization .legalization__get-sin {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+.arrive__inner .inner__legalization .legalization__get-sin .get__sin-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.arrive__inner .inner__legalization .legalization__get-sin .get__sin-tex {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.arrive__inner .inner__legalization .legalization__get-sin .get__sin-textlink {
+  font-size: 22px;
+  color: #f88203;
+  background: linear-gradient(to right, #fcfbf8, #fac68d);
+}
+.arrive__inner .inner__legalization .legalization__get-sin .get__sin-link {
+  font-size: 38px;
+  font-weight: 600;
+  color: #f3aa5c;
+  background: linear-gradient(to right, #fcfbf8, #f3aa5c);
+  display: block;
+  text-align: center;
+  max-width: 800px;
+  height: 70px;
+  padding-top: 15px;
+  margin: 0 auto 10px auto;
+}
+.arrive__inner .inner__legalization .legalization__get-helseycard {
+  display: none;
+  flex-direction: column;
+}
+.arrive__inner .inner__legalization .legalization__get-helseycard .get__helseycard-title {
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+.arrive__inner .inner__legalization .legalization__get-helseycard .get__helsey-cardtitle {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.arrive__inner .inner__legalization .legalization__get-helseycard .get__helsey-cardlink {
+  display: block;
+  text-align: center;
+  color: #f3aa5c;
+  background: linear-gradient(to right, #fcfbf8, #f3aa5c);
+  border-radius: 5px;
+  padding-top: 5px;
+  height: 50px;
+}
+.arrive__inner .inner__legalization .legalization__get-helseycard .get__helseycard-dock {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.arrive__inner .inner__legalization .legalization__get-helseycard .get__helsey-cardtext .helsey__cardtext-linkprotect {
+  color: #f3aa5c;
+  background: linear-gradient(to right, #fcfbf8, #f3aa5c);
+}
+.arrive__inner .inner__legalization .legalization__bank {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+}
+.arrive__inner .inner__legalization .legalization__bank .bank__financehelp {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  color: #f3aa5c;
+  background: linear-gradient(to right, #fcfbf8, #f3aa5c);
+  font-size: 42px;
+  font-weight: 900;
+}
+.arrive__inner .inner__legalization .legalization__bank .bank__title {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+.arrive__inner .inner__legalization .legalization__bank .bank__list {
+  display: flex;
+  flex-direction: column;
+}
+.arrive__inner .inner__legalization .legalization__bank .bank__list-title {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.arrive__inner .inner__legalization .legalization__bank .bank__items {
+  display: flex;
+  max-width: 600px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #fcfbf8, #f3aa5c);
+  cursor: pointer;
+}
+.arrive__inner .inner__legalization .legalization__bank .bank__link {
+  color: #f3aa5c;
+}
+.arrive__inner .inner__newhome {
+  width: 90vw;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+.arrive__inner .inner__newhome .newhome__titlemain {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+.arrive__inner .inner__newhome .newhome__title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.arrive__inner .inner__newhome .newhome__siteitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #fcfbf8, #f3aa5c);
+  margin-bottom: 5px;
+  height: 100px;
+}
+.arrive__inner .inner__newhome .newhome__sitelink {
+  color: #f3aa5c;
+  font-size: 42px;
+  font-weight: 900;
+}
+.arrive__inner .inner__work {
+  width: 90vw;
+  display: none;
+  flex-direction: column;
+}
+.arrive__inner .inner__work .work__resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #fcfbf8, #f3aa5c);
+  height: 70px;
+  margin-bottom: 20px;
+}
+.arrive__inner .inner__work .work__resume-createlink {
+  color: #f3aa5c;
+  font-size: 42px;
+  font-weight: 600;
+}
+.arrive__inner .inner__work .work__searching .work__searching-title {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.arrive__inner .inner__work .work__searching .work__searching-list {
+  display: flex;
+  flex-direction: column;
+}
+.arrive__inner .inner__work .work__searching .work__searching-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #fcfbf8, #f3aa5c);
+  height: 70px;
+  margin-bottom: 10px;
+}
+.arrive__inner .inner__work .work__searching .work__searching-link {
+  font-size: 42px;
+  font-weight: 600;
+  color: #f3aa5c;
+}
+
+.gyde_calgary-inner {
+  padding-top: 30px;
+}
+.intinform_maintitle {
+  font-size: 52px;
+  background: -webkit-linear-gradient(#fabc65, #9b4101);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intinform_listOfgyde {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+#fairEntry_content {
+  display: none;
+}
+
+#prices_content {
+  display: none;
+}
+
+#salary_content {
+  display: none;
+}
+
+#medExam_content {
+  display: none;
+}
+#medExam_content p {
+  font-size: 32px;
+  text-align: justify;
+}
+
+#workCalgary_content {
+  display: none;
+  background-color: #fce7a7;
+}
+#workCalgary_content a {
+  font-size: 32px;
+  text-align: start;
+  color: #9b4101;
+}
+#workCalgary_content p {
+  text-align: center;
+}
+
+#rentCalgary_content {
+  display: none;
+}
+
+#foodBank_content {
+  display: none;
+}
+#foodBank_content h1 {
+  font-size: 42px;
+}
+#foodBank_content h2 {
+  font-size: 32px;
+}
+#foodBank_content li {
+  text-align: start;
+}
+#foodBank_content p {
+  text-align: justify;
+}
+
+#cal_cont-card {
+  display: none;
+}
+
+.listOfgyde_item {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  border: 5px solid #f89854;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.listOfgyde_contentItem {
+  flex-direction: column;
+  position: absolute;
+  padding: 30px 15px;
+  font-size: 32px;
+  font-weight: 700;
+  top: 0;
+  left: 0;
+  width: 90vw;
+  border-radius: 5px;
+  background: linear-gradient(#fbebbd, #facdae);
+  text-align: center;
+}
+.listOfgyde_contentItem h3 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.listOfgyde_contentItem p {
+  margin-bottom: 10px;
+}
+.listOfgyde_contentClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: url(../img/close-calgaryGydeContent.svg);
+  cursor: pointer;
+}
+.listOfgyde_itemButton {
+  width: inherit;
+  height: 200px;
+  cursor: pointer;
+}
+.listOfgyde .priceInCalgary {
+  transform: rotateY(5deg);
+}
+.listOfgyde_item:nth-child(1) {
+  background-image: url(../img/tax_CardBg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.listOfgyde_item:nth-child(2) {
+  background-image: url(../img/financesCardBagroundimg.jpeg);
+  background-size: cover;
+}
+.listOfgyde_item:nth-child(3) {
+  background-image: url(../img/documentsCardBaground-image.jpg);
+  background-size: cover;
+}
+.listOfgyde_item:nth-child(4) {
+  background-image: url(../img/calgaryGide-foodbankbakgroundimage.jpg);
+  background-size: cover;
+}
+.listOfgyde_item:nth-child(5) {
+  background-image: url(../img/Medical-Exam-calgarybg.jpeg);
+  background-size: 100%;
+}
+.listOfgyde_item:nth-child(6) {
+  background-image: url(../img/WorkCardBackgroundImg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.listOfgyde_item:nth-child(7) {
+  background-image: url(../img/rentCalgaryGuidebg.jpg);
+  background-size: 100%;
+}
+.listOfgyde_item:nth-child(8) {
+  background-image: url(../img/newcomers-calgaryGuidebg.png);
+  background-size: 100%;
+}
+.listOfgyde_item:nth-child(9) {
+  background-image: url(../img/mobileCardbgimg.jpg);
+  background-size: cover;
+}
+.listOfgyde_link {
+  background: linear-gradient(#8e4101, #9b4101);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 42px;
+  text-align: center;
+}
+
+.show__airmob {
+  display: none;
+}
+
+.show__sin {
+  display: none;
+}
+
+#scroll-btn {
+  display: none;
+  background-image: url(../img/icons/arrow_upscroll.svg);
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 9999;
+  border-radius: 50%;
+}
+
+.SinNumber h1 {
+  font-size: 52px;
+}
+.SinNumber h2 {
+  font-size: 42px;
+}
+.SinNumber p {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+.SinNumber ul {
+  list-style: square;
+}
+.SinNumber li {
+  text-align: start;
+}
+
+.idCard_Canadd h1 {
+  font-size: 52px;
+}
+.idCard_Canadd h2 {
+  font-size: 42px;
+}
+.idCard_Canadd ul {
+  list-style: square;
+  margin-bottom: 20px;
+}
+.idCard_Canadd li {
+  position: relative;
+  padding-left: 20px;
+  text-align: start;
+}
+.idCard_Canadd li::before {
+  content: url(../img/icons/arrow_right_FILL0_wght400_GRAD0_opsz48.svg);
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.idCard_Canadd p {
+  font-size: 26px;
+  text-align: justify;
+}
+
+.agenciForHelp h1 {
+  font-size: 42px;
+}
+.agenciForHelp h2 {
+  font-size: 32px;
+}
+.agenciForHelp p {
+  text-align: justify;
+}
+
+#hidden-Content {
+  height: 1px;
+  overflow: hidden;
+  border-bottom: 2px solid #6a0801;
+}
+#hidden-Content li {
+  position: relative;
+  padding-left: 20px;
+  text-align: start;
+  margin-bottom: 25px;
+}
+#hidden-Content li::before {
+  content: url(../img/icons/arrow_right_FILL0_wght400_GRAD0_opsz48.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#hidden-Content h5 {
+  font-size: 32px;
+}
+#hidden-Content span {
+  background-color: #ff0101;
+}
+#hidden-Content p {
+  font-size: 32px;
+  text-align: justify;
+}
+
+#showHiddenContent {
+  font-size: 42px;
+}
+
+@media (max-width: 750px) {
+  .header {
+    margin-bottom: 70px;
+  }
+  .header__inner-logo {
+    background: url(../img/canada-logoMobile375px.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 20px;
+  }
+  .header__inner-menu {
+    flex-direction: column;
+  }
+  .header__inner-btn {
+    display: flex;
+    width: 100px;
+  }
+  .header__inner-title {
+    display: none;
+    font-size: 32px;
+    text-align: center;
+  }
+  .header__inner-menu-items {
+    display: none;
+  }
+  .arrive {
+    display: none;
+  }
+  .arrive__inner .inner__legalization {
+    width: 90vw;
+    padding-top: 1px;
+    margin-bottom: 0;
+  }
+  .arrive__inner .inner__legalization .legalization__get-sin {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    border-bottom: 5px solid #111;
+    margin-bottom: 0;
+  }
+  .arrive__inner .inner__legalization .legalization__get-sin .get__sin-link {
+    font-size: 22px;
+  }
+  .arrive__inner .inner__legalization .legalization__get-helseycard {
+    display: flex;
+    border-bottom: 5px solid #111;
+  }
+  .arrive__inner .inner__legalization .legalization__get-helseycard .get__helseycard-title {
+    font-size: 42px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #f98203;
+    cursor: pointer;
+  }
+  .arrive__inner .inner__legalization .legalization__bank {
+    display: flex;
+    justify-content: start;
+  }
+  .arrive__inner .inner__legalization .legalization__bank .bank__title {
+    font-size: 42px;
+    margin: 15px 0 60px 0;
+    cursor: pointer;
+    color: #f98203;
+  }
+  .arrive__inner .inner__legalization .legalization__bank .bank__financehelp {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .arrive__inner .inner__development .development__airport {
+    padding-top: 10px;
+    display: flex;
+  }
+  .arrive__inner .inner__newhome {
+    display: flex;
+  }
+  .arrive__inner .inner__newhome .newhome__titlemain {
+    cursor: pointer;
+    color: #f98203;
+    font-size: 42px;
+    margin: 20px 0 50px;
+  }
+  .arrive__inner .inner__newhome .newhome__siteitem {
+    height: 60px;
+  }
+  .arrive__inner .inner__newhome .newhome__sitelink {
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 900;
+  }
+  .arrive__inner .inner__work {
+    display: flex;
+  }
+  .arrive__inner .inner__work .work__resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+  .arrive__inner .inner__work .work__resume-createlink {
+    font-size: 32px;
+  }
+  .arrive__inner .inner__work .work__searching .work__searching-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .arrive__inner .inner__work .work__searching .work__searching-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #fcfbf8, #f3aa5c);
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  .arrive__inner .inner__work .work__searching .work__searching-link {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .show__work {
+    width: 90vw;
+    cursor: pointer;
+    color: #f3aa5c;
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+  #hiddenair {
+    height: 10vh;
+    overflow: hidden;
+    transition: all 4s;
+    border-bottom: 5px solid rgb(10, 10, 10);
+  }
+  .show__airmob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f3aa5c;
+    margin-bottom: 45px;
+  }
+  #hiddenfrehost {
+    background: linear-gradient(to right, #fcfbf8, #f3aa5c);
+    height: 78px;
+    overflow: hidden;
+  }
+  .find__freehost-title {
+    font-size: 32px;
+    cursor: pointer;
+  }
+  #hiddensin {
+    height: 10vh;
+    overflow: hidden;
+    transition: all 2s;
+  }
+  .show__sin {
+    color: #f3aa5c;
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: 15px 0 60px 0;
+  }
+  #hiddenhealth {
+    height: 10vh;
+    overflow: hidden;
+    transition: all 2s;
+  }
+  #hiddenbank {
+    height: 10vh;
+    overflow: hidden;
+    transition: all 2s;
+    border-bottom: 5px solid #111;
+  }
+  #hiddenrent {
+    height: 10vh;
+    transition: all 2s;
+    border-bottom: 5px solid #111;
+  }
+  #hiddenrentsitelist {
+    font-size: 32px;
+    height: 60px;
+    overflow: hidden;
+  }
+  #title__sitelist {
+    color: #f3aa5c;
+    cursor: pointer;
+  }
+  #hiddenwork {
+    height: 10vh;
+    overflow: hidden;
+    transition: all 2s;
+    border-bottom: 5px solid #111;
+  }
+  .show__work {
+    margin: 20px 0 50px;
+  }
+  .worksitelist {
+    height: 45px;
+  }
+  .work__searching-title {
+    color: #f3aa5c;
+    cursor: pointer;
+  }
+  #workCalgary_content h1 {
+    font-size: 32px;
+    margin-bottom: 400px;
+  }
+  #workCalgary_content h2 {
+    font-size: 32px;
+  }
+  #workCalgary_content a {
+    font-size: 18px;
+  }
+  #rentCalgary_content h1 {
+    font-size: 46px;
+  }
+  .listOfgyde_link {
+    font-size: 32px;
+  }
+}
+@media (max-width: 400px) {
+  a {
+    font-size: 20px;
+  }
+  .arrive {
+    display: none;
+  }
+  .arrive__inner .inner__legalization {
+    padding-top: 1px;
+    margin-bottom: 0;
+    width: 90vw;
+  }
+  .arrive__inner .inner__legalization .legalization__get-sin .get__sin-link {
+    font-size: 22px;
+  }
+  .arrive__inner .inner__legalization .legalization__get-helseycard {
+    display: flex;
+    margin-bottom: 1px;
+    color: #f3aa5c;
+    width: 90vw;
+    margin: 0;
+  }
+  .arrive__inner .inner__legalization .legalization__get-helseycard .get__helseycard-title {
+    font-size: 42px;
+    margin-bottom: 1px;
+  }
+  .arrive__inner .inner__legalization .legalization__bank {
+    display: flex;
+    justify-content: start;
+  }
+  .arrive__inner .inner__legalization .legalization__bank .bank__title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .arrive__inner .inner__legalization .legalization__bank .bank__financehelp {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .arrive__inner .inner__development .development__airport {
+    padding-top: 10px;
+    display: flex;
+  }
+  .arrive__inner .inner__development .development__airport .airport__title {
+    font-size: 32px;
+  }
+  .arrive__inner .inner__development .development__airport .airport__getworkperm {
+    margin-bottom: 10px;
+  }
+  .arrive__inner .inner__development .development__airport .airport__getworkperm .getworkperm__title {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  .arrive__inner .inner__development .development__airport .airport__getworkperm .getworkperm__text {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .arrive__inner .inner__development .development__airport .airport__getworkperm .getworkperm__link {
+    font-size: 20px;
+    color: #f98203;
+    background: linear-gradient(to right, #fcfbf8, #f3aa5c);
+  }
+  .arrive__inner .inner__development .development__airport__newhome {
+    display: flex;
+    overflow: hidden;
+  }
+  .arrive__inner .inner__development .development__airport__newhome .newhome__titlemain {
+    font-size: 42px;
+    margin-bottom: 1px;
+  }
+  .arrive__inner .inner__development .development__airport__newhome .newhome__siteitem {
+    height: 60px;
+  }
+  .arrive__inner .inner__development .development__airport__newhome .newhome__sitelink {
+    text-align: center;
+    color: #f3aa5c;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .arrive__inner .inner__development .development__airport__work {
+    display: flex;
+  }
+  .arrive__inner .inner__development .development__airport__work .work__resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+  .arrive__inner .inner__development .development__airport__work .work__resume-createlink {
+    font-size: 32px;
+  }
+  .arrive__inner .inner__development .development__airport__work .work__searching .work__searching-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .arrive__inner .inner__development .development__airport__work .work__searching .work__searching-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  .arrive__inner .inner__development .development__airport__work .work__searching .work__searching-link {
+    font-size: 22px;
+    font-weight: 600;
+    color: #f3aa5c;
+  }
+  .listOfgyde_contentItem h1 {
+    font-size: 22px;
+  }
+  #workCalgary_content h1 {
+    margin-bottom: 100px;
+  }
+  #hidden-Content {
+    height: 1px;
+    overflow: hidden;
+    border-bottom: 2px solid #6a0801;
+  }
+  #hidden-Content li {
+    font-size: 16px;
+    position: relative;
+    padding-left: 20px;
+    text-align: start;
+    margin-bottom: 15px;
+  }
+  #hidden-Content li::before {
+    content: url(../img/icons/arrow_right_FILL0_wght400_GRAD0_opsz48.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #hidden-Content h5 {
+    font-size: 32px;
+  }
+  #hidden-Content p {
+    font-size: 16px;
+    text-align: justify;
+  }
+  #showHiddenContent {
+    font-size: 22px;
+  }
+}/*# sourceMappingURL=style.css.map */
